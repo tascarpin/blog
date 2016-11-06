@@ -140,9 +140,9 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        blog\Providers\AppServiceProvider::class,
+        blog\Providers\EventServiceProvider::class,
+        blog\Providers\RouteServiceProvider::class,
 
     ],
 
