@@ -144,6 +144,11 @@ return [
         blog\Providers\EventServiceProvider::class,
         blog\Providers\RouteServiceProvider::class,
 
+        /*
+         * Application Service Providers para o Auth
+         */
+        blog\Providers\AuthServiceProvider::class,
+
     ],
 
     /*
