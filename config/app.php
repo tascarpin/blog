@@ -147,7 +147,7 @@ return [
         /*
          * Application Service Providers para o Auth
          */
-        blog\Providers\AuthServiceProvider::class,
+//        blog\Providers\AuthServiceProvider::class,
 
     ],
 

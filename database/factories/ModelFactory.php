@@ -19,3 +19,11 @@ $factory->define(blog\User::class, function ($faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(blog\Produto::class, function ($faker) {
+    return [
+        'nome' => $faker->name,
+        'descricao' => $faker->text,
+        'preco' => $faker->randomFloat(10),
+    ];
+});

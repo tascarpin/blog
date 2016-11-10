@@ -3,7 +3,28 @@
         <title>Produtos</title>
     </head>
     <body>
-        <h1>Olá <?php echo $nome; ?></h1>
-        <h1>Olá {{ $nome }}</h1>
+{{--    {{ dd($produtos->chunk(3)) }}--}}
+    {{--{{ $produtos }}--}}
+    {{ dd($produtos) }}
+
+        {{--<h1>Produtos</h1>--}}
+
+        {{--<ul>--}}
+            {{--@foreach($produtos as $produto)--}}
+                {{--<li>{{ $produto->nome }}--}}
+                    {{--<ul>--}}
+                        {{--<li>{{ $produto->descricao }}</li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
+            {{--@endforeach--}}
+        {{--</ul>--}}
+    {{--@foreach ($produtos->chunk(3) as $chunk)--}}
+        {{--<div class="row">--}}
+            {{--@foreach ($chunk as $produto)--}}
+                {{--<div class="col-xs-4">{{ $produto->nome }}</div>--}}
+            {{--@endforeach--}}
+        {{--</div>--}}
+    {{--@endforeach--}}
+
     </body>
 <html>

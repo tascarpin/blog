@@ -3,6 +3,7 @@
 namespace blog\Http\Controllers;
 
 use blog\Http\Requests;
+use blog\Produto;
 use Illuminate\Http\Request;
 
 class ProdutosController extends Controller
@@ -14,8 +15,9 @@ class ProdutosController extends Controller
      */
     public function index()
     {
-        $nome = 'Tassio';;
-        return view('produtos.index', ['nome' => $nome]);
+        $produtos = Produto::all();
+//        return view('produtos.index', ['produtos' => $produtos]);
+        return view('produtos.index', compact('produtos'));
     }
 
     /**
